@@ -4,7 +4,7 @@
 #define INF  (int)1e9
 #define EPS   1e-9
 #define MOD 1000000007ll
-#define PI 3.14159
+#define Pi 3.14159
 // for input-output
 #define fio ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
 // iteration macros: have advantage of auto-casting and not recomputing arguments
@@ -14,34 +14,44 @@
 #define clearBit(S, j) (S &= ~(1 << j))
 #define toggleBit(S, j) (S ^= (1 << j))
 // input macro
-#define in(x,n)   for(int e=0;e<n;e++){ll y;cin>>y;x.pb(y);}
+#define IN(x,n)   for(int e=0;e<n;e++){ll y;cin>>y;x.pb(y);}
 //output macro
 #define print(x)    for(auto it:x) cout<<it<<' '; cout<<endl;
-#define printii(x)  for(auto it:x) cout<<it.F<<' '<<it.S<<'\t';  cout<<endl;
+#define printPI(x)  for(auto it:x) cout<<it.F<<' '<<it.S<<'\t';  cout<<endl;
 // shortcut for data type
 #define ll long long
-#define vi vector<ll>
-#define vvi vector<vi>
-#define ii pair<ll,ll>
-#define pll pair<ll,ll>
-#define vii vector<ii>
-#define vvii vector<vii>
-#define viii vector<pair<ii,ll>>
-#define pb push_back
-#define ppb pop_back
-#define eb emplace_back
-#define mp make_pair
+#define PI pair<int,int>
+#define PL pair<ll,ll>
+#define VI vector<int>
+#define VL vector<ll>
+#define VVI vector<VI>
+#define VVL vector<VL>
+#define VVVI vector<VVI>
+#define VVVL vector<VVL>
+#define VPI vector<PI>
+#define VPL vector<PL>
+#define PB push_back
+#define PPB pop_back
+#define EB emplace_back
+#define MP make_pair
 #define F first
 #define S second
 #define uset unordered_set
 #define umap unordered_map
+#define dbg(x, y) cout << x << " = " << y << endl
+
 // Rajawat Banna --namespace
 using namespace std;
+
+// Rajawat Banna --const
+const int Ntest = 1e5 + 5;
+
 // Rajawat Banna --useful function
 ll gcd(ll a, ll b){ll temp;while (b > 0){temp = a%b;a = b;b = temp;} return a;}
 ll lcm(ll a, ll b){return a*b/gcd(a,b);}
 ll fpow(ll  b, ll exp, ll mod){if(exp == 0) return 1;ll t = fpow(b,exp/2,mod);if(exp&1) return t*t%mod*b%mod;return t*t%mod;}
 ll divmod(ll i, ll j, ll mod){i%=mod,j%=mod;return i*fpow(j,mod-2,mod)%mod;}
+
 // Rajawat Banna --clock funtion
 clock_t time_p=clock();
 void TimeTaken()
@@ -49,19 +59,22 @@ void TimeTaken()
     time_p=clock()-time_p;
     cerr<<"Completion time : "<<(float)(time_p)/CLOCKS_PER_SEC<<"\n";
 }
-//Rajawat Banna  --solve function
-void solve() {
 
+//RajawatBanna --solve function
+void solve(){
+	
 }
-//RajawatBanna --main function
-int main(){
-	ios::sync_with_stdio(false);
-    	cin.tie(0);
-//	int t; scanf("%d", &t); while(t--)
-	solve();
-	return 0;
 
-//   TimeTaken();
+//RajawatBanna --main function
+int main() {
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+  int t = 1;
+  cin >> t;
+  while(t--) {
+    solve();
+  }
+  return 0;
 }
 //----------------------------------------------------------------------------
 //RRRRRRRR      RRR           RR      RRR     RR      RR    RRR     RRRRRRRR
@@ -80,6 +93,9 @@ int main(){
 //RR     RR  RR     RR  RR   RRR   RR   RRR   RR     RR
 //RRRRRRRR   RR     RR  RR    RR   RR    RR   RR     RR
 //--------------------------------------------------------------------------
+
+
+
 
 
 
