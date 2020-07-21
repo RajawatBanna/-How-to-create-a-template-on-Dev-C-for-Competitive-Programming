@@ -13,11 +13,14 @@
 #define setBit(S, j) (S |= (1 << j))
 #define clearBit(S, j) (S &= ~(1 << j))
 #define toggleBit(S, j) (S ^= (1 << j))
+#define all(x) x.begin(), x.end()
+#define clr(x) memset(x, 0, sizeof(x))
+#define sortall(x) sort(all(x))
 // input macro
-#define IN(x,n)   for(int e=0;e<n;e++){ll y;cin>>y;x.pb(y);}
+#define IN(x,n)   for(ll e=0;e<n;e++){ll y;cin>>y;x.PB(y);}
 //output macro
-#define print(x)    for(auto it:x) cout<<it<<' '; cout<<endl;
-#define printPI(x)  for(auto it:x) cout<<it.F<<' '<<it.S<<'\t';  cout<<endl;
+#define print(x)    for(auto it:x) cout<<it<<' '; cout<<"\n";
+#define printPI(x)  for(auto it:x) cout<<it.F<<' '<<it.S<<'\t';  cout<<"\n";
 // shortcut for data type
 #define ll long long
 #define PI pair<int,int>
@@ -62,16 +65,16 @@ void TimeTaken()
 
 //RajawatBanna --solve function
 void solve(){
-	
+
 }
 
 //RajawatBanna --main function
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
-  int t = 1;
-  cin >> t;
-  while(t--) {
+  ll test = 1;
+  cin >> test;
+  while(test--) {
     solve();
   }
   return 0;
@@ -93,6 +96,9 @@ int main() {
 //RR     RR  RR     RR  RR   RRR   RR   RRR   RR     RR
 //RRRRRRRR   RR     RR  RR    RR   RR    RR   RR     RR
 //--------------------------------------------------------------------------
+
+
+
 
 
 
